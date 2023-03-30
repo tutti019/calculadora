@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1>CALCULADORA</h1>
+    <div class="cal-container">
+
+        <div>
+            <form name="calculator">
+
+                <input type="text"
+                 name="text"
+                 id="visor"/>
+
+            
+
+            <div class="btn">
+                
+                 <button type="button" value="C" class="espaco" onclick="reset();">C</button>
+                 <button type="button" value="%" class="percentage" onclick="percentage();">%</button>
+                 <button type="button" value="<" class="back" onclick="back();"><</button>
+
+                 <button type="button" value="1" onclick="botao(value);">1</button>
+                 <button type="button" value="2" onclick="botao(value);">2</button>
+                 <button type="button" value="3" onclick="botao(value);">3</button>
+                 <button type="button" value="4" onclick="botao(value);">4</button>
+                 <button type="button" value="5" onclick="botao(value);">5</button>
+                 <button type="button" value="6" onclick="botao(value);">6</button>
+                 <button type="button" value="7" onclick="botao(value);">7</button>
+                 <button type="button" value="8" onclick="botao(value);">8</button>
+                 <button type="button" value="9" onclick="botao(value);">9</button>
+                 <button type="button" value="0" onclick="botao(value);">0</button>
+
+                 <button type="button" value="/" onclick="botao(value);">/</button>
+                 <button type="button" value="*" onclick="botao(value);">*</button>
+                 <button type="button" value="+" onclick="botao(value);">+</button>
+                 <button type="button" value="," onclick="botao(value);">,</button>
+                 <button type="button" value="-" onclick="botao(value);">-</button>
+                 <button type="button" value="=" onclick="calcular(value);">=</button>
+
+            </div>
+
+        </form>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
